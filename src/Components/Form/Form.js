@@ -31,7 +31,7 @@ const Form = () => {
         <form onSubmit={onSubmit}>
             <div className="input-group flex-nowrap mb-3">
                 <div className="input-group-prepend">
-                    <span className="input-group-text" id="addon-wrapping" onClick={() => addNote(value)}>Добавить</span>
+                    <span className="input-group-text" id="addon-wrapping" onClick={(e) => onSubmit()}>Добавить</span>
                 </div>
                 <input type="text" className="form-control" placeholder="..." aria-label="..." aria-describedby="addon-wrapping" value={value} onChange={e => setValue(e.target.value)} />
             </div>
